@@ -113,3 +113,5 @@ Use at your own risk.
 Amateur radio operator developing tools for DX log verification.
 
 ---
+
+Sample files are included in the repository for testing.
