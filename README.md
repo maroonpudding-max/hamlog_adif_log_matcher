@@ -1,8 +1,8 @@
 # DX Log Matcher for HAMLOG and ADIF
 
-Python tool for matching amateur radio QSO logs between **HAMLOG CSV** and **ADIF logs** such as **LoTW** and **eQSL**.
+Tool for automatically matching amateur radio QSO logs between **HAMLOG CSV** and **ADIF logs (LoTW / eQSL)**.
 
-This script detects matching QSOs automatically and helps verify confirmed contacts.
+Designed for DXers who manage large HAMLOG databases and want to quickly verify confirmations.
 
 ---
 
