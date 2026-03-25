@@ -1,4 +1,4 @@
-# DX Log Matcher
+# hamlog_adif_log_matcher
 
 Python tool for matching amateur radio QSO logs between HAMLOG CSV and ADIF formats.
 
