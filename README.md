@@ -1,4 +1,4 @@
-# DX Log Matcher for HAMLOG and ADIF
+# DX Log Matcher for HAMLOG
 
 Tool for automatically matching amateur radio QSO logs between **HAMLOG CSV** and **ADIF logs (LoTW / eQSL)**.
 
