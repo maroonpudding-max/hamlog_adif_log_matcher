@@ -1,0 +1,57 @@
+dx_match_final.py
+
+L LOTW only        K LOTW,PAPER
+E eQSL only        F eQSL,PAPER
+R LOTW,eQSL
+P PAPER only       Y LOTW,eQSL,PAPER
+
+
+変更ルール
+
+QSL欄　３文字目　何もないとき
+
+lotwがヒットすれば　L    eqslがヒットすれば　E
+
+lotw eqsl 両方がヒットすれば　R
+
+
+QSL欄　３文字目　Pのとき
+
+lotwがヒットすれば　K   eqslがヒットすれば　F
+
+lotw eqsl 両方がヒットすれば　Y
+
+
+QSL欄　３文字目　Eのとき
+
+lotwがヒットすれば　R   eqslがヒットすれば　そのまま
+
+lotw eqsl 両方がヒットすれば　R
+
+
+QSL欄　３文字目　Lのとき
+
+lotwがヒットすれば　そのまま   eqslがヒットすれば　R
+
+lotw eqsl 両方がヒットすれば　R
+
+
+QSL欄　３文字目　Fのとき
+
+lotwがヒットすれば　R   eqslがヒットすれば　そのまま
+
+lotw eqsl 両方がヒットすれば　R
+
+
+QSL欄　３文字目　Kのとき
+
+lotwがヒットすれば　そのまま   eqslがヒットすれば　R
+
+lotw eqsl 両方がヒットすれば　R
+
+
+QSL欄　３文字目　Yのとき
+
+lotw eqsl 両方がヒットしなければ　P　　lotw　eqsl 両方ヒットしたら　変更無し
+lotwだけヒットしたら　K  　　　eqslだけヒットしたらF
+
