@@ -1,3 +1,5 @@
+![Result](command.png)
+
 # DX Log Matcher for HAMLOG
 
 Tool for automatically matching amateur radio QSO logs between **HAMLOG CSV** and **ADIF logs (LoTW / eQSL)**.
@@ -103,8 +105,6 @@ These files show detected matches and verification results.
 This software is provided **"as is"**, without warranty of any kind.
 
 Use at your own risk.
-
-![Result](docs/command.png)
 
 ---
 
