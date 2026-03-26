@@ -115,3 +115,5 @@ Amateur radio operator developing tools for DX log verification.
 ---
 
 Sample files are included in the repository for testing.
+
+This tool has been tested on a real HAMLOG database containing over 86,000 QSO records, enabling fast verification of LoTW and eQSL confirmations.
