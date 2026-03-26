@@ -101,8 +101,8 @@ These rules help account for time differences and delayed log uploads.
 The script generates result files such as:
 
 ```
-matched.txt
-checked.txt
+changes_checked.txt
+hamlog_checked.csv
 ```
 
 These files show detected matches and verification results.
