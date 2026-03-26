@@ -20,7 +20,7 @@ eqsl.adi
 
 Run:
 
-python dx_match_final_v8.py
+python hamlog_adif_log_matcher.py
 
 ## Output
 
