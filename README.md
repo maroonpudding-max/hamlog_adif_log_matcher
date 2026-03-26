@@ -70,7 +70,7 @@ Input files:
 hamlog.csv
 lotw.adi
 eqsl.adi
-dx_match_final_v8.py
+hamlog_adif_log_matcher.py
 ```
 
 2. Run the script:
