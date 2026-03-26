@@ -76,7 +76,7 @@ hamlog_adif_log_matcher.py
 2. Run the script:
 
 ```
-python dx_match_final_v8.py
+python hamlog_adif_log_matcher.py
 ```
 
 3. The script will analyze the logs and detect matching QSOs.
