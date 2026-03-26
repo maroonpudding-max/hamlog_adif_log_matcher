@@ -16,6 +16,15 @@ Because uploads may occur hours, days, or even years later, manual matching can 
 
 This tool automatically compares log entries and detects matches using multiple criteria.
 
+Background
+
+HAMLOG originally used a simple QSL flag system where the third character was often just "Y".
+
+After starting to manage confirmations from LoTW and eQSL, more detailed classification became necessary.
+However, a large number of existing QSOs remained unprocessed, and manual verification was no longer practical.
+
+This script was created to automate the matching process between HAMLOG logs and ADIF logs (LoTW / eQSL), allowing large QSO databases to be processed quickly and consistently.
+
 ---
 
 ## Features
