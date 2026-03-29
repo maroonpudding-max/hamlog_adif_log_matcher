@@ -4,26 +4,25 @@
 
 Tool for automatically matching amateur radio QSO logs between **HAMLOG CSV** and **ADIF logs (LoTW / eQSL)**.
 
-Designed for DXers who manage large HAMLOG databases and want to quickly verify confirmations.
+Designed for DXers who manage large HAMLOG databases and need fast, reliable confirmation verification.
 
 ---
 
 ## Overview
 
-Amateur radio operators often keep logs in **HAMLOG** while confirmations arrive later via **LoTW** or **eQSL**.
+Amateur radio operators often maintain logs in **HAMLOG**, while confirmations are received later via **LoTW** or **eQSL**.
 
-Because uploads may occur hours, days, or even years later, manual matching can be extremely time-consuming.
+Because confirmations may be uploaded hours, days, or even years after the original QSO, manual matching becomes increasingly time-consuming and error-prone.
 
-This tool automatically compares log entries and detects matches using multiple criteria.
+This tool automates the comparison process by applying flexible matching logic across multiple parameters.
 
-Background
+### Background
 
-HAMLOG originally used a simple QSL flag system where the third character was often just "Y".
+HAMLOG traditionally used a simple QSL flag system, where the third character was often just "Y".
 
-After starting to manage confirmations from LoTW and eQSL, more detailed classification became necessary.
-However, a large number of existing QSOs remained unprocessed, and manual verification was no longer practical.
+After incorporating confirmations from LoTW and eQSL, more granular classification became necessary. However, a large number of existing QSOs remained unverified, making manual processing impractical.
 
-This script was created to automate the matching process between HAMLOG logs and ADIF logs (LoTW / eQSL), allowing large QSO databases to be processed quickly and consistently.
+This script was developed to automate and standardize the matching process between HAMLOG logs and ADIF logs, enabling efficient handling of large-scale QSO datasets.
 
 ---
 
@@ -35,12 +34,45 @@ This script was created to automate the matching process between HAMLOG logs and
   * CALLSIGN
   * BAND
   * MODE
-  * Time tolerance (default ±60 minutes)
-* Supports confirmation sources such as:
+  * Time tolerance (default: ±60 minutes)
+* Supports confirmation sources:
 
   * LoTW
   * eQSL
-* Designed for **DX confirmation management**
+* Optimized for **DX confirmation workflows**
+* High-speed processing for large log datasets
+
+---
+
+## Design Philosophy
+
+This tool is designed with real-world log variability in mind.
+
+Amateur radio logs often contain inconsistencies such as:
+
+* Time offsets
+* Mode differences (e.g., FT8 vs MFSK)
+* Minor formatting variations
+
+Instead of assuming perfectly aligned data, this script applies tolerant and practical matching rules to handle such discrepancies.
+
+---
+
+## Customization
+
+This script is intentionally designed to be **modifiable**.
+
+Different operators may have different logging environments, operating styles, or matching requirements. Therefore:
+
+* You are encouraged to modify the script to suit your needs
+* Key parameters such as:
+
+  * Time tolerance
+  * Mode normalization
+  * Matching conditions
+    can be freely adjusted
+
+This is not a fixed or closed tool — it is a flexible matching engine intended to adapt to individual workflows.
 
 ---
 
@@ -54,7 +86,7 @@ No external libraries are required.
 
 ## Supported File Formats
 
-Input files:
+### Input
 
 * HAMLOG export file (CSV)
 * LoTW log file (ADIF)
@@ -85,27 +117,27 @@ python hamlog_adif_log_matcher.py
 
 ## Matching Rules
 
-Matches are determined using the following fields:
+Matches are determined using:
 
 * CALLSIGN
 * BAND
 * MODE
-* QSO time within ±60 minutes tolerance
+* QSO time within a configurable tolerance (default: ±60 minutes)
 
-These rules help account for time differences and delayed log uploads.
+These rules are designed to accommodate real-world logging delays and variations.
 
 ---
 
 ## Output
 
-The script generates result files such as:
+The script generates output files such as:
 
 ```
 changes_checked.txt
 hamlog_checked.csv
 ```
 
-These files show detected matches and verification results.
+These files contain detected matches and verification results.
 
 ---
 
@@ -123,6 +155,8 @@ Amateur radio operator developing tools for DX log verification.
 
 ---
 
+## Notes
+
 Sample files are included in the repository for testing.
 
-This tool has been tested on a real HAMLOG database containing over 86,000 QSO records, enabling fast verification of LoTW and eQSL confirmations.
+This tool has been tested on a real HAMLOG database containing over **86,000 QSO records**, demonstrating fast and practical verification of LoTW and eQSL confirmations.
