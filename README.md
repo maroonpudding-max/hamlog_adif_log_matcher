@@ -160,3 +160,14 @@ Amateur radio operator developing tools for DX log verification.
 Sample files are included in the repository for testing.
 
 This tool has been tested on a real HAMLOG database containing over **86,000 QSO records**, demonstrating fast and practical verification of LoTW and eQSL confirmations.
+
+This tool is not designed as a rigid, one-size-fits-all solution.
+
+Amateur radio logs often contain inconsistencies such as time offsets, mode differences, and formatting variations depending on the operator’s environment and logging style.
+
+For this reason, the matching logic (time tolerance, mode handling, and other conditions) is intentionally designed to be flexible and customizable.
+
+Users are expected to adjust these parameters to fit their own operating conditions.
+
+This approach allows the tool to remain practical and efficient when working with real-world log data, rather than assuming perfectly aligned records.
+
