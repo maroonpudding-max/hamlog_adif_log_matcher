@@ -6,6 +6,25 @@ Tool for automatically matching amateur radio QSO logs between **HAMLOG CSV** an
 
 Designed for DXers who manage large HAMLOG databases and need fast, reliable confirmation verification.
 
+Before: Manual QSO matching took several days  
+After: Automated processing completes in ~30 seconds (total workflow ~20 minutes)
+
+Efficient matching based on callsign + timestamp with tolerance
+
+## 概要（日本語）
+HAMLOGとADIFログの不一致を自動マッチングするツールです。  
+eQSL / LoTWの未コンファームQSOを効率的に整理できます。  
+
+- 数千件のログでも高速処理  
+- 手作業の突き合わせを自動化  
+- コンファーム漏れの発見を支援  
+
+**こんな人向け：**
+- eQSL / LoTWで未マッチが大量にある人
+- 手作業でログ照合している人
+
+手作業で数日かかっていたログ照合を数分に短縮できます。
+
 ---
 
 ## Overview
